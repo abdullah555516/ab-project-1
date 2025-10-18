@@ -1,0 +1,267 @@
+
+/* Commonresponsive css */
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive typography */
+@media (max-width: 767px) {
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+  }
+
+  h3 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  p {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+}
+
+/* Responsive containers */
+@media (max-width: 767px) {
+  .inner-hero-section,
+  .inner-help-section,
+  .inner-campaign-section,
+  .inner-testimonial-section,
+  .inner-blog-section,
+  .inner-footer-section {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+}
+
+/* Flexible spacing */
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 60vh;
+  }
+
+  .organization-section {
+    height: auto;
+  }
+
+  .improve-section-right {
+    height: auto !important;
+  }
+}
+
+/* Touch-friendly buttons */
+
+@media (max-width: 767px) {
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Prevent horizontal scroll */
+
+* {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+@media (max-width: 1400px){
+    /* hero-section */
+    .hero-section-right-img img{
+        width: 300px;
+    }
+
+    /* Subscribe Section */
+    .subscribe-section-input button{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1330px){
+
+    .subscribe-section-input button{
+        margin-left: 10px;
+        text-align: right;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .subscribe-section-input button{
+        display: none;
+    }
+}
+
+@media (max-width: 1100px){
+
+    
+}
+
+@media (max-width: 1067px){
+    .steps-section-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 980px){
+    .header-section{
+        width: 800px;
+    }
+    .header-top{
+        display: none;
+
+        
+
+    }
+    .header-bottom{
+        width: 800px;
+    }
+    .header-inner-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .header-buttom-menu{
+        display: none;
+        
+    }
+
+    .services-section-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-section-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 763px){
+    .hero-section-right-img{
+        display: none;
+    }
+
+    /* Rating-section */
+
+    .inner-rating-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .rating-section-card{
+        border-bottom: 1px solid ghostwhite;
+        padding: 0 inherit;
+        padding-bottom: 7px;
+        
+    }
+       .rating-section-card h1{
+        border-right: none;
+    }
+
+    /* Project-section */
+    /* .projects-section-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    } */
+
+    /* Partner section  */
+    .inner-partner-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        
+    }
+    .partner-section-right{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        
+    }
+    .partner-section-right img{
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 680px){
+    .services-section-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .projects-section-header{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .projects-section-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .subscribe-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .subscribe-section-input{
+        margin-left: 150px;
+    }
+
+
+    .team-section-header{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .team-section-header button{
+        
+        width:200px;
+
+    }
+    .team-section-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .update-section-top{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .update-section-bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .steps-section-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 563px){
+    .hero-section-left h1{
+        font-size: 3rem;
+    }
+}
