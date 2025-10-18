@@ -78,9 +78,7 @@ body {
 
 @media (max-width: 1400px){
     /* hero-section */
-    .hero-section-right-img img{
-        width: 300px;
-    }
+   
 
     /* Subscribe Section */
     .subscribe-section-input button{
@@ -264,4 +262,5 @@ body {
     .hero-section-left h1{
         font-size: 3rem;
     }
+
 }
